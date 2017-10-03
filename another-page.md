@@ -3,7 +3,14 @@ layout: default
 ---
 
 ## Welcome to another page
-
-_yay_
+[back](./)
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
 
 [back](./)
