@@ -13,14 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: make a record of every day
+title: Hi, I'm Judy
 email: 973253501@qq.com
 description: >- # this means to ignore newlines until "baseurl:"
-  一万年太久，只争朝夕
-  万里长江横渡，极目楚天舒，不管风吹浪打
+  Rome was not built in a day
+  
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: none
+url: "https://shl4046.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  judy
 
 # Build settings
