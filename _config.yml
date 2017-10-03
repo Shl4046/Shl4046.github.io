@@ -25,7 +25,7 @@ github_username:  judy
 # Build settings
 markdown: kramdown
 #theme: minima
-theme: jekyll-theme-hacker
+theme: jekyll-theme-modernist
 plugins:
   - jekyll-feed
 
