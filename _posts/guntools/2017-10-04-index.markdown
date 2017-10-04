@@ -1,0 +1,7 @@
+---
+layout: default
+title:  "guntools"
+date:   2017-10-03 01:53:30 -0700
+permalink: /_posts/guntools/
+---
+[make](2017/10/03/make)
