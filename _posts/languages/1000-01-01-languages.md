@@ -1,12 +1,16 @@
 ---
 layout: default
 title:  "languages"
+category: "posts"
+excerpt_separator: ""
 ---
-
-[c]({% post_url languages/2017-10-05-c %})
-
-[c++]({% post_url languages/2017-10-05-c++ %})
-
-[java]({% post_url languages/2017-10-05-java %})
-
-[python]({% post_url languages/2017-10-05-python %})
+<ul>
+  {% for post in site.posts %}
+   {% if post.category == 'languages' %}
+    <li>      
+        <a href="{{ post.url }}">{{ post.title }}</a> 
+        {{ post.excerpt }}
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>

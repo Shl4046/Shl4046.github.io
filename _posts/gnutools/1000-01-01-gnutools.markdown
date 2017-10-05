@@ -1,8 +1,16 @@
 ---
 layout: default
 title:  "guntools"
-
+category: "posts"
+excerpt_separator: ""
 ---
-[make]({% post_url gnutools/2017-10-03-make %})
-
-[git]({% post_url gnutools/2017-10-05-git %})
+<ul>
+  {% for post in site.posts %}
+   {% if post.category == 'guntools' %}
+    <li>      
+        <a href="{{ post.url }}">{{ post.title }}</a> 
+        {{ post.excerpt }}
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>
