@@ -3,4 +3,5 @@ layout: default
 title:  "languages"
 
 ---
-[binder]
+[c] ({% post_url languages/2017-10-05-c %})
+[c++] ({% post_url languages/2017-10-05-c++ %})
