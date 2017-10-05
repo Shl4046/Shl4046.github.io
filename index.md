@@ -3,9 +3,7 @@ layout: default
 ---
 
 
-[back](./)
-
-[guntools](/_posts/guntools/)
+[guntools]({% post_url gnutools/2017-10-03-index %})
 
 
 

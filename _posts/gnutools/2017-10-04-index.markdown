@@ -1,0 +1,7 @@
+---
+layout: default
+title:  "guntools"
+
+---
+[back]({% post_url index %})
+[make]({% post_url 2017-10-03-make %})
