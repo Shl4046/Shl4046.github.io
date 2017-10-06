@@ -9,7 +9,7 @@ excerpt_separator: ""
    {% if post.category == 'languages' %}
     <li>      
         <a href="{{ post.url }}">{{ post.title }}</a> 
-        #{{ post.excerpt }}
+        <!-- {{ post.excerpt }} -->
     </li>
     {% endif %}
   {% endfor %}
