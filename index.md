@@ -11,11 +11,11 @@ layout: default
     {% endif %}
   {% endfor %}
 </ul>
+<br>
+### TOP BLOGS~~
 
 {% for post in site.posts %}
   {% if post.istop == 'true' %}
-<br>
-### TOP BLOGS~~
 <a href="{{ post.url }}">{{ post.title | prepend: "/" | prepend: post.category }}</a>
   {% endif %}
 {% endfor %}
