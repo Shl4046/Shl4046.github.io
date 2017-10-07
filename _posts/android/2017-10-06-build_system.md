@@ -2,6 +2,7 @@
 layout: default
 title: "build_system"
 category: android
+istop: "true"
 ---
 
 # build system
