@@ -190,7 +190,7 @@ void AndroidRuntime::start(const char* className, const Vector<String8>& options
 
 
 * zygote启动侦听socket端口，无限循环。采用poll机制，其接口定义在./libcore/luni/src/main/java/android/system/Os.java文件中，这个文件提供了访问linux系统调用的很多接口。
-handler实现的底层用的也是epoll机制。 
+Looper实现的底层用的也是epoll机制。 
 * socket先建立链接`ZygoteConnection newPeer = acceptCommandPeer(abiList);`
 * 然后读取数据并执行`boolean done = peers.get(i).runOnce();`
 {% highlight java %}
