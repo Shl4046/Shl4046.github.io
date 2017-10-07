@@ -16,7 +16,7 @@ layout: default
 
 {% for post in site.posts %}
   {% if post.istop == 'true' %}
-<a href="{{ post.url }}">{{ post.title | prepend: "/" | prepend: post.category }}</a>
+<a href="{{ post.url }}" >{{ post.title | prepend: "/" | prepend: post.category }}</a>
   {% endif %}
 {% endfor %}
 
