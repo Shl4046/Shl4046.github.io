@@ -1,11 +1,10 @@
 ---
 layout: default
-title: "shell"
-category: languages
+title: "linux\_commands"
+category: gnutools
 ---
 
 >     {{ page.date | date: "%Y-%m-%d," }} {{ page.content | number_of_words | append: "chars"}}
 >     {{ page.tags }}
 
-# shell
-
+# linux\_commands
