@@ -13,9 +13,7 @@ layout: default
 </ul>
 <br>
 
-* * *
-* * *
-### Quickly Click~~
+#### Quickly Click~~
 
 {% for post in site.posts %}
   {% if post.istop == 'true' %}
