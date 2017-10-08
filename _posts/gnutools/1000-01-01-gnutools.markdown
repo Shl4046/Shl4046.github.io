@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "guntools"
+title:  "gnutools"
 category: "posts"
 excerpt_separator: ""
 ---
