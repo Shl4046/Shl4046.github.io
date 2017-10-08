@@ -12,7 +12,10 @@ layout: default
   {% endfor %}
 </ul>
 <br>
-### TOP BLOGS~~
+
+* * *
+* * *
+### Quickly Click~~
 
 {% for post in site.posts %}
   {% if post.istop == 'true' %}

@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "languages"
+title:  "langs"
 category: "posts"
 excerpt_separator: ""
 ---

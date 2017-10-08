@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "linux_commands"
-category: "guntools"
+category: "gtools"
 istop: "true"
 ---
 >     {{ page.date | date: "%Y-%m-%d," }} {{ page.content | number_of_words | append: "chars"}}
