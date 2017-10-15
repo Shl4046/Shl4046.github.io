@@ -229,9 +229,9 @@ a {
   text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
   text-decoration : none
 }
-
 a:hover{text-decoration:underline} 
-
+a:visited {color:#FFDEAD;}
+a:active {color: #FFDEAD;}
 /* Clearfix */
 
 .cf:before, .cf:after {
