@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "linux_cmds"
-category: "gtools"
+category: "linux"
 istop: "true"
 ---
 >     {{ page.date | date: "%Y-%m-%d," }} {{ page.content | number_of_words | append: "chars"}}
@@ -9,6 +9,14 @@ istop: "true"
 
 # linux_commands
 
-date  
+##### date  
 sudo date -s 2017-10-15  
 sudo date -s  09:33:40
+
+##### grep  
+grep -nir "xxx"
+
+##### find  
+find -name xxx
+
+##### scp  
