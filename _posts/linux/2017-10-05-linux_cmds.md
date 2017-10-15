@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "linux_commands"
+title:  "linux_cmds"
 category: "gtools"
 istop: "true"
 ---
@@ -8,3 +8,7 @@ istop: "true"
 >     {{ page.tags }}
 
 # linux_commands
+
+date  
+sudo date -s 2017-10-15  
+sudo date -s  09:33:40
