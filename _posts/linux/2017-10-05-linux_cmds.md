@@ -14,9 +14,11 @@ sudo date -s 2017-10-15
 sudo date -s  09:33:40
 
 ##### grep  
-grep -nir "xxx"
+grep -nir --include=*.rc "xxx"
 
 ##### find  
 find -name xxx
 
 ##### scp  
+
+##### history 

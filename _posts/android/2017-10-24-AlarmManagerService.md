@@ -1,6 +1,5 @@
 ---
 layout: default
-title: "system_server"
+title: "AlarmManagerSrvice"
 category: android
 ---
-

@@ -98,7 +98,9 @@ SRC_HEADERS := \
 	$(TOPDIR)frameworks/av/include \
 	$(TOPDIR)frameworks/base/include
 {% endhighlight %}
-编译用到的tools
+
+**编译用到的tools**
+
 {% highlight sh %}
 ...
 ACP := $(prebuilt_sdk_tools_bin)/acp
@@ -127,7 +129,9 @@ FUTILITY := prebuilts/misc/$(BUILD_OS)-$(HOST_PREBUILT_ARCH)/futility/futility
 VBOOT_SIGNER := prebuilts/misc/scripts/vboot_signer/vboot_signer.sh
 ...
 {% endhighlight %}
-编译宏控
+
+**编译宏控**
+
 {% highlight sh %}
 HOST_GLOBAL_CFLAGS += $(COMMON_GLOBAL_CFLAGS)
 HOST_RELEASE_CFLAGS += $(COMMON_RELEASE_CFLAGS)
@@ -143,8 +147,7 @@ TARGET_RELEASE_CPPFLAGS += $(COMMON_RELEASE_CPPFLAGS)
 {% endhighlight %}
 
 ### build/core/envsetup.mk
-设置了编译输出目录的组织结构，重点是导入了
-`include $(BUILD_SYSTEM)/product_config.mk``include $(board_config_mk)`这两个和产品和板级有关的配置mk
+设置了编译输出目录的组织结构，重点是导入了`include $(BUILD_SYSTEM)/product_config.mk``include $(board_config_mk)`这两个和产品和板级有关的配置mk  
 {% highlight sh %}
 ...
 TARGET_COPY_OUT_SYSTEM := system
@@ -155,28 +158,13 @@ TARGET_COPY_OUT_ODM := odm
 TARGET_COPY_OUT_ROOT := root
 TARGET_COPY_OUT_RECOVERY := recovery
 ...
-BUILD_OUT := $(HOST_OUT)
-
-HOST_CROSS_OUT_release := $(HOST_OUT_ROOT_release)/windows-$(HOST_PREBUILT_ARCH)
-HOST_CROSS_OUT_debug := $(HOST_OUT_ROOT_debug)/windows-$(HOST_PREBUILT_ARCH)
-HOST_CROSS_OUT := $(HOST_CROSS_OUT_$(HOST_BUILD_TYPE))
-
-TARGET_PRODUCT_OUT_ROOT := $(TARGET_OUT_ROOT)/product
-
-TARGET_COMMON_OUT_ROOT := $(TARGET_OUT_ROOT)/common
-HOST_COMMON_OUT_ROOT := $(HOST_OUT_ROOT)/common
-
+...
 PRODUCT_OUT := $(TARGET_PRODUCT_OUT_ROOT)/$(TARGET_DEVICE)
 
 OUT_DOCS := $(TARGET_COMMON_OUT_ROOT)/docs
 
 BUILD_OUT_EXECUTABLES := $(BUILD_OUT)/bin
-
-HOST_OUT_EXECUTABLES := $(HOST_OUT)/bin
-HOST_OUT_SHARED_LIBRARIES := $(HOST_OUT)/lib64
-HOST_OUT_RENDERSCRIPT_BITCODE := $(HOST_OUT_SHARED_LIBRARIES)
-HOST_OUT_JAVA_LIBRARIES := $(HOST_OUT)/framework
-HOST_OUT_SDK_ADDON := $(HOST_OUT)/sdk_addon
+...
 ...
 ifeq ($(TARGET_IS_64_BIT),true)
 # /system/lib always contains 32-bit libraries,
