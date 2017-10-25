@@ -28,6 +28,30 @@ PROXIMITY_SCREEN_OFF_WAKE_LOCK 近感灭屏锁不会阻止系统进入休眠，�
 常见的flag    
 ACQUIRE_CAUSES_WAKEUP 获得后会导致系统亮屏
 
+常见的user activity
+
+USER_ACTIVITY_EVENT_OTHER 软件活动，一般是应用调用接口所致
+
+USER_ACTIVITY_EVENT_BUTTON 按键活动
+
+USER_ACTIVITY_EVENT_TOUCH 触摸屏 
+
+USER_ACTIVITY_EVENT_ACCESSIBILITY 无障碍
+
+常见的灭屏原因，在debug的时候很有用
+
+GO_TO_SLEEP_REASON_APPLICATION 软件灭屏，应用发来的灭屏
+
+GO_TO_SLEEP_REASON_TIMEOUT 超时灭屏 
+
+GO_TO_SLEEP_REASON_POWER_BUTTON 按了power键 
+
+值得注意的一个flag  
+
+GO_TO_SLEEP_FLAG_NO_DOZE 直接跳过浅度睡眠，进入深度睡眠
+
+
+
 常用的接口  
 userActivity（） 使用这个接口，如果系统已经休眠，则不会导致系统唤醒。如果屏幕亮屏，则会重新计算灭屏超时，如果屏幕处于dim状态，则屏幕亮度会提升
 
@@ -35,7 +59,7 @@ goToSleep（）覆盖所有持有的锁，进入睡眠。一般是power键按下
 
 wakeUp（）唤醒系统（屏幕）。
 
-睡眠深度顺序  wake-dream-doze-sleep
+睡眠深度顺序  `wake->dream->doze->sleep`
 
 isPowerSaveMode() 是否在省电/低电模式（关心的是有电没电的问题）
 
