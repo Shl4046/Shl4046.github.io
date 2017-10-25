@@ -8,7 +8,7 @@ istop: "true"
 >     {{ page.date | date: "%Y-%m-%d," }} {{ page.content | number_of_words | append: "chars"}}
 >     {{ page.tags }}
 
-## PowerManager 
+##  PowerManager
 
 分析PowerManagerService可以先从PowerManager入手
 
@@ -74,6 +74,6 @@ isIgnoringBatteryOptimizations（）是否在电池优化白名单
 
 ----------
 
-## PowerManagerService 
+## PowerManagerService
 
 PowerManager大多数接口都会调用到PowerManagerService中来  
