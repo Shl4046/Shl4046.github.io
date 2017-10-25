@@ -2,6 +2,7 @@
 layout: default
 title: "PowerManager"
 category: android
+istop: "true"
 ---
 
 ## PowerManager 
