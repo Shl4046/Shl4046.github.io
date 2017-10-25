@@ -5,6 +5,9 @@ category: android
 istop: "true"
 ---
 
+>     {{ page.date | date: "%Y-%m-%d," }} {{ page.content | number_of_words | append: "chars"}}
+>     {{ page.tags }}
+
 ## PowerManager 
 
 分析PowerManagerService可以先从PowerManager入手
