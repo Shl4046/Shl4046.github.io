@@ -1,0 +1,16 @@
+---
+layout: default
+title:  "algorithms"
+category: "posts"
+excerpt_separator: ""
+---
+<ul>
+  {% for post in site.posts %}
+   {% if post.category == page.title %}
+    <li>      
+        <a href="{{ post.url }}">{{ post.title }}</a> 
+        <!-- {{ post.excerpt }} -->
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>
